@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "landing-agents"
+version = "0.1.0"
+description = "Landing Agents Platform scaffold with FastMCP servers and conversation engine."
+authors = [{ name = "Landing Agents", email = "team@example.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp",
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[project.urls]
+"Source" = "https://example.com/landing-agents"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
